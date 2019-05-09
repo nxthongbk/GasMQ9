@@ -1,0 +1,11 @@
+sources:
+{
+	GasMQ9GroveCardComponent.c
+}
+requires:
+{
+    api:
+    {
+        le_adc.api
+    }
+}

@@ -1,0 +1,28 @@
+executables:
+{
+	gasmq9grovecard = ( GasMQ9GroveCardComponent )
+}
+
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+
+	run:
+	{
+		( gasmq9grovecard )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+bindings:
+{
+	gasmq9grovecard.GasMQ9GroveCardComponent.le_adc -> modemService.le_adc
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K
